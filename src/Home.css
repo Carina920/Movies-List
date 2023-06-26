@@ -1,0 +1,100 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.category-selector {
+  margin-bottom: 20px;
+}
+
+.category-selector label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+/* UPDATE */
+.movie-card {
+  /* Rest of the code */
+  position: relative;
+}
+
+.movie-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.rating,
+.favorite {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon,
+.heart-icon {
+  color: #f1c40f;
+  margin-right: 5px;
+}
+
+.favorite .heart-icon {
+  color: #e74c3c;
+}
